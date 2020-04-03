@@ -7,10 +7,11 @@ TYP HIERONDER JOUW PHPCODE
 
 // Maak een tweedimenionale array, ofwel een array van arrays
 $speelveld=array(
-                  array(1,2,3),
-                  array(4,5,6),
-                  array(7,8,9)
-                );
+for ($r=0;$r<5;$r++) {
+  for ($k=0;$k<5;$k++) {
+    $speelveld[$r][$k]=$k+$r*5+1;    
+  }
+}
 echo "<h2>De negen is numeriek: ".$speelveld[0][0];
 echo " | De zes is numeriek: ".$speelveld[0][0]."</h2>";
 
